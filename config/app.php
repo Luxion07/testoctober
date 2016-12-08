@@ -29,7 +29,7 @@ return [
     |
     */
 
-    'url' => 'http://localhost',
+    'url' => 'http://testoctober',
 
     /*
     |--------------------------------------------------------------------------
@@ -81,7 +81,7 @@ return [
     |
     */
 
-    'key' => 'CHANGE_ME!!!!!!!!!!!!!!!!!!!!!!!',
+    'key' => 'JjBDcWP5qF1cEAoss8Xm1EEkCEnW8VcE',
 
     'cipher' => 'AES-256-CBC',
 
