@@ -1,0 +1,29 @@
+{
+  "name": "octobertest",
+  "version": "1.0.0",
+  "description": "octobertest",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "laravel-elixir": "^2.0.0"
+  },
+  "devDependencies": {
+    "gulp-livereload": "^3.8.1",
+    "laravel-elixir-livereload": "^1.1.6"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Luxion07/testoctober.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Luxion07/testoctober/issues"
+  },
+  "homepage": "https://github.com/Luxion07/testoctober#readme"
+}

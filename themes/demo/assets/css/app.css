@@ -1,0 +1,16 @@
+.navbar-inverse {
+  background-color: #000;
+  color: #111; }
+  .navbar-inverse ul {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+  .navbar-inverse li {
+    display: inline-block; }
+  .navbar-inverse a {
+    display: block;
+    color: #555;
+    padding: 6px 12px;
+    text-decoration: none; }
+
+/*# sourceMappingURL=app.css.map */

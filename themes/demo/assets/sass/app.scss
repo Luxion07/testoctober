@@ -1,0 +1,18 @@
+.navbar-inverse {
+  background-color: #000;
+  color: #111;
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li { display: inline-block; }
+
+  a {
+    display: block;
+    color: #555;
+    padding: 6px 12px;
+    text-decoration: none;
+  }
+}
