@@ -90,32 +90,32 @@ tabs:
             default: https://appstore.com
             comment: Leave empty for hide icon
 
-        features_enabled:
-            tab: Features
+        menu_enabled:
+            tab: Menu
             label: Enabled
             type: switch
             default: true
-        features_headline:
-            tab: Features
+        menu_headline:
+            tab: Menu
             label: Headline
             type: text
-            default: "Unlimited Features, Unlimited Fun"
-        features_subheadline:
-            tab: Features
+            default: "Unlimited Menu, Unlimited Fun"
+        menu_subheadline:
+            tab: Menu
             label: Subheadline
             type: text
             default: "Check out what you can do with this app theme!"
-        features_img:
-            tab: Features
+        menu_img:
+            tab: Menu
             label: Image
             comment: Please aspect ratio 0,5625 (e.g. 621 x 1104)
             type: fileupload
             mode: image
             imageWidth: 310
             imageHeight: 552
-        features_list:
-            tab: Features List
-            label: Features
+        menu_list:
+            tab: Menu List
+            label: Menu
             type: repeater
             form:
                 fields:
@@ -134,63 +134,114 @@ tabs:
                         type: text
                         span: full
 
-        cta_enabled:
-            tab: CTA
+        gallery_enabled:
+            tab: Gallery
             label: Enabled
             type: switch
             default: true
-        cta_headline:
-            tab: CTA
+        gallery_headline:
+            tab: Gallery
             label: Headline
             type: text
             default: "Stop waiting.<br>Start building."
-        cta_button:
-            tab: CTA
+        gallery_button:
+            tab: Gallery
             label: Button
             type: text
             span: left
             default: "Let's Get Started!"
-        cta_button_link:
-            tab: CTA
+        gallery_button_link:
+            tab: Gallery
             label: Button link
             type: text
             span: right
             default: "#contact"
             comment: Leave empty for hiding button
 
-        contact_enabled:
-            tab: Contact
+        reviews_enabled:
+            tab: Reviews
             label: Enabled
             type: switch
             default: true
-        contact_headline:
-            tab: Contact
+        reviews_headline:
+            tab: Reviews
             label: Headline
             type: text
             default: 'We <i class="fa fa-heart"></i> new friends!'
-        contact_twitter:
-            tab: Contact
+        reviews_twitter:
+            tab: Reviews
             label: Twitter link
             type: text
             span: left
             default: https://twitter.com
             comment: Leave empty for hide icon
-        contact_facebook:
-            tab: Contact
+        reviews_facebook:
+            tab: Reviews
             label: Facebook link
             type: text
             span: right
             default: https://facebook.com
             comment: Leave empty for hide icon
-        contact_google:
-            tab: Contact
+        reviews_google:
+            tab: Reviews
             label: Google Plus link
             type: text
             span: left
             default: https://plus.google.com
             comment: Leave empty for hide icon
-        contact_content:
-            tab: Contact
+        reviews_content:
+            tab: Reviews
             label: Content
             type: richeditor
             default:
+
+        instagram_enabled:
+            tab: Instagram
+            label: Enabled
+            type: switch
+            default: true
+        instagram_headline:
+            tab: Instagram
+            label: Headline
+            type: text
+            default: 'We <i class="fa fa-heart"></i> new friends!'
+        instagram_twitter:
+            tab: Instagram
+            label: Twitter link
+            type: text
+            span: left
+            default: https://twitter.com
+            comment: Leave empty for hide icon
+        instagram_facebook:
+            tab: Instagram
+            label: Facebook link
+            type: text
+            span: right
+            default: https://facebook.com
+            comment: Leave empty for hide icon
+        instagram_google:
+            tab: Instagram
+            label: Google Plus link
+            type: text
+            span: left
+            default: https://plus.google.com
+            comment: Leave empty for hide icon
+        instagram_content:
+            tab: Instagram
+            label: Content
+            type: richeditor
+            default:
+
+
+        booking_enabled:
+                    tab: Booking
+                    label: Enabled
+                    type: switch
+                    default: true
+
+
+
+
+
+
+

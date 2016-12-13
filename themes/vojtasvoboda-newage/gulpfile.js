@@ -2,6 +2,8 @@ var gulp = require('gulp');
 var elixir = require('laravel-elixir');
 var less = require('gulp-less');
 var livereload = require('gulp-livereload');
+var sourcemaps = require('gulp-sourcemaps');
+
 // var BrowserSync = require('laravel-elixir-browsersync');
 // var browserSync = require('browser-sync').create();
 // var header = require('gulp-header');
@@ -49,14 +51,20 @@ elixir(function(mix) {
      * Process frontend SCSS stylesheets
      */
         .less([
-            'new-age.less'
+            // 'new-age.less'
+            'bootstrap.less'
+        ], 'assets/css/bootstrap.css')
+        .less([
+            // 'new-age.less'
+            'app.less'
         ], 'assets/css/app.css')
         /**
          * Combine pre-processed frontend CSS files
          */
-        .styles([
-            'assets/css/app.css'
-        ], 'assets/css/new-age.min.css')
+        // .styles([
+        //     'assets/css/bootstrap.css',
+        //     'assets/css/app.css'
+        // ], 'assets/css/new-age.min.css')
         /**
          * Combine frontend scripts
          */
@@ -72,9 +80,9 @@ elixir(function(mix) {
         /**
          * Apply version control
          */
-        .version([
-            "assets/css/new-age.min.css"
-        ])
+        // .version([
+        //     "assets/css/new-age.min.css"
+        // ])
         // .livereload('http://testoctober/');
         // .livereload([
         //     'themes/demo/assets/**/*.css'

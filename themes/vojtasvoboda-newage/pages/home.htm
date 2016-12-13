@@ -1,4 +1,4 @@
-title = "Homepage"
+title = "home"
 url = "/"
 layout = "default"
 is_hidden = 0
@@ -11,14 +11,22 @@ is_hidden = 0
     {% partial 'sections/download' %}
 {% endif %}
 
-{% if this.theme.features_enabled %}
-    {% partial 'sections/features' %}
+{% if this.theme.menu_enabled %}
+{% partial 'sections/menu' %}
 {% endif %}
 
-{% if this.theme.cta_enabled %}
-    {% partial 'sections/cta' %}
+{% if this.theme.gallery_enabled %}
+{% partial 'sections/gallery' %}
 {% endif %}
 
-{% if this.theme.contact_enabled %}
-    {% partial 'sections/contact' %}
+{% if this.theme.reviews_enabled %}
+{% partial 'sections/reviews' %}
+{% endif %}
+
+{% if this.theme.instagram_enabled %}
+{% partial 'sections/instagram' %}
+{% endif %}
+
+{% if this.theme.booking_enabled %}
+{% partial 'sections/booking' %}
 {% endif %}
