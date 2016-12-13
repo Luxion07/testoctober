@@ -16,7 +16,7 @@ return [
     |
     */
 
-    'debug' => true,
+    'debug' => env('APP_DEBUG', false),
 
     /*
     |--------------------------------------------------------------------------
@@ -29,7 +29,7 @@ return [
     |
     */
 
-    'url' => 'http://testoctober',
+    'url' => env('APP_URL', 'http://testoctober'),
 
     /*
     |--------------------------------------------------------------------------
@@ -81,7 +81,7 @@ return [
     |
     */
 
-    'key' => 'JjBDcWP5qF1cEAoss8Xm1EEkCEnW8VcE',
+    'key' => env('APP_KEY', 'JjBDcWP5qF1cEAoss8Xm1EEkCEnW8VcE'),
 
     'cipher' => 'AES-256-CBC',
 
