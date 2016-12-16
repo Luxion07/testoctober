@@ -73,6 +73,10 @@ elixir(function(mix) {
         //     'plugins.js',
         //     'frontend/app.js'
         // ], 'public/js/frontend.js')
+        //
+        .scripts([
+            'new-age.js'
+        ], 'assets/js/new-age.min.js')
         /**
          * Process backend SCSS stylesheets
          */

@@ -6804,7 +6804,7 @@ header {
   font-family: 'Montserrat', 'sans-serif';
   font-weight: 400;
   background: url("../images/header_bg.png") no-repeat;
-  background-size: 100%;
+  background-size: cover;
   text-align: center;
 }
 header .row {
@@ -6842,6 +6842,7 @@ header .vline {
 }
 .download {
   background-color: #0f1522;
+  z-index: -1;
 }
 .download .pete_text {
   letter-spacing: 9px;
@@ -6861,6 +6862,9 @@ header .vline {
 .download .vline {
   min-height: 125px;
   border-right: solid 1px #fff;
+}
+.menu {
+  background-color: #fff;
 }
 .menu .text1 {
   margin-top: 100px;
@@ -6899,15 +6903,40 @@ header .vline {
   min-height: 130px;
   border-right: solid 1px #d8d8d8;
 }
+.menu .rotate {
+  transform: rotate(-90deg);
+  position: relative;
+  width: 195px;
+  /* margin-right: 17px; */
+  right: 670px;
+  top: 524px;
+  letter-spacing: 5px;
+  font-size: 12px;
+  line-height: 26px;
+}
+.menu .gline {
+  margin-top: 46px;
+}
 .gallery {
   background-color: #f7f7f7;
+  min-height: 950px;
 }
 .gallery img {
   margin-top: 80px;
   margin-bottom: 80px;
 }
+.gallery .rotate {
+  transform: rotate(-90deg);
+  letter-spacing: 5px;
+  position: relative;
+  width: 301px;
+  margin-right: 71px;
+  right: 100px;
+  top: 478px;
+}
 .reviews {
   background-color: #0f1522;
+  min-height: 950px;
 }
 .reviews .kav {
   font-size: 80px;
@@ -6924,8 +6953,18 @@ header .vline {
   margin-top: 50px;
   margin-bottom: 200px;
 }
+.reviews .rotate {
+  transform: rotate(-90deg);
+  letter-spacing: 5px;
+  position: relative;
+  width: 301px;
+  /* margin-right: 17px; */
+  right: 110px;
+  top: 445px;
+}
 #instagram {
   background-color: white;
+  min-height: 950px;
 }
 #instagram .insta {
   margin-top: 50px;
@@ -6937,12 +6976,33 @@ header .vline {
 #instagram .image_insta {
   padding: 0;
 }
+#instagram .rotate {
+  transform: rotate(-90deg);
+  letter-spacing: 5px;
+  position: relative;
+  width: 301px;
+  /* margin-right: 17px; */
+  right: 91px;
+  top: 480px;
+  color: #000;
+}
 footer {
   background-color: #0e1326;
   color: #fff;
 }
 footer .row > div {
   margin-top: 220px;
+}
+footer .rotate {
+  transform: rotate(-90deg);
+  position: relative;
+  width: 301px;
+  /* margin-right: 17px; */
+  right: 110px;
+  top: 188px;
+  letter-spacing: 3px;
+  font-size: 23px;
+  line-height: 40px;
 }
 footer .footer_left {
   border-right: solid 1px #fff;
@@ -6978,11 +7038,26 @@ footer .footer_right p {
 #mainNav .container {
   margin-top: 20px;
 }
+#mainNav .container .navbar-collapse {
+  letter-spacing: 5px;
+  line-height: 26px;
+  font-size: 12px;
+}
 #mainNav .img-right {
   margin-top: 15px;
-  letter-spacing: 4.29px;
-  line-height: 26px;
 }
 #mainNav .img-left {
   font-size: 23px;
+  letter-spacing: 3px;
+}
+@media (max-width: 768px) {
+  header .header_title,
+  .menu .header_title {
+    font-size: 19vw;
+  }
+}
+@media (max-width: 421px) {
+  .menu .header_title {
+    font-size: 17vw;
+  }
 }

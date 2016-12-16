@@ -1,14 +1,7 @@
 (function($) {
     "use strict"; // Start of use strict
 
-    // jQuery for page scrolling feature - requires jQuery Easing plugin
-    $('a.page-scroll').bind('click', function(event) {
-        var $anchor = $(this);
-        $('html, body').stop().animate({
-            scrollTop: ($($anchor.attr('href')).offset().top - 50)
-        }, 1250, 'easeInOutExpo');
-        event.preventDefault();
-    });
+
 
     // Highlight the top nav as scrolling occurs
     $('body').scrollspy({
@@ -26,6 +19,146 @@
         offset: {
             top: 50
         }
-    })
+    });
 
-})(jQuery); // End of use strict
+    // $(document).ready(function(){
+    //     /*  document.onmousewheel=document.onwheel=function(){
+    //      return false;
+    //      };
+    //      document.addEventListener("MozMousePixelScroll",function(){return false},false);
+    //      document.onkeydown=function(e) {
+    //      if (e.keyCode>=33&&e.keyCode<=40) return false;
+    //      }*/
+    //
+    //     $('#mainNav').css('position','relative');
+    //     $('#mainNav').clone().prependTo($('#menu'));
+    //     $('#mainNav').remove();
+    //
+    //     // jQuery for page scrolling feature - requires jQuery Easing plugin
+    //     $('a.page-scroll').bind('click', function(event) {
+    //         var $anchor = $(this);
+    //         $('html, body').stop().animate({
+    //             scrollTop: ($($anchor.attr('href')).offset().top - 50)
+    //         }, 1250, 'easeInOutExpo');
+    //         event.preventDefault();
+    //     });
+    //
+    //     var sections = $('#page-top').children('section, footer, header');
+    //     var sec = [];
+    //
+    //     var flag = [];
+    //
+    //     for(var i = 0; i < sections.length; i++) {
+    //         sec[i + 1] = $(sections).eq(i);
+    //         flag[i + 1] = true;
+    //     }
+    //
+    //
+    //
+    //
+    //     function GetSecsHeight(count, secs){
+    //         var result = 0;
+    //         for(var i = 0; i < count; i++)
+    //             result += $(secs[i+1]).height();
+    //         return result;
+    //     }
+    //
+    //
+    //     $(window).scroll(function(event){
+    //
+    //         var window_height = $(window).scrollTop() + window.innerHeight;
+    //
+    //         var top_sections = $(sec[2]).height() + $(sec[1]).height();
+    //
+    //
+    //         if(window_height < top_sections)
+    //             flag[1] = true;
+    //
+    //         //var sec3 = $(sec[1]).height() + $(sec[2]).height() + $(sec[3]).height()  - $('#mainNav').height();
+    //
+    //         //  for(var j = 3; j < 5; j++ ) {
+    //         // var temp = 3;
+    //         // if (window_height < GetSecsHeight(temp, sec) - 200)
+    //         //     flag[temp] = true;
+    //         //
+    //         //
+    //         // if (window_height > GetSecsHeight(temp, sec) - $('#mainNav').height()   && flag[temp]) {
+    //         //     console.log('Start');
+    //         //     var lol = setInterval(function () {
+    //         //         if ($(window).scrollTop() >= GetSecsHeight(temp, sec) - $('#mainNav').height()) {
+    //         //             clearInterval(lol);
+    //         //             lol = false;
+    //         //             flag[temp] = false;
+    //         //         }
+    //         //         else {
+    //         //             $(window).scrollTop($(window).scrollTop() + 1);
+    //         //
+    //         //         }
+    //         //     }, 30);
+    //         // }
+    //         // }
+    //
+    //         // var temp = 5;
+    //         // if (window_height < GetSecsHeight(temp, sec) - 200)
+    //         //     flag[temp] = true;
+    //         //
+    //         //
+    //         // if (window_height > GetSecsHeight(temp, sec) - $('#mainNav').height()  && flag[temp]) {
+    //         //
+    //         //     var col = setInterval(function () {
+    //         //         if ($(window).scrollTop() >= GetSecsHeight(temp, sec) - $('#mainNav').height()) {
+    //         //             clearInterval(col);
+    //         //             flag[temp] = false;
+    //         //             col = false;
+    //         //         }
+    //         //         else {
+    //         //             $(window).scrollTop($(window).scrollTop() + 1);
+    //         //
+    //         //         }
+    //         //     }, 30);
+    //         // }
+    //
+    //         //    }
+    //
+    //         //for(var i = sec.length; i < 3; i--)
+    //
+    //
+    //         if(window_height > GetSecsHeight(2,sec) && flag[1])
+    //             var inter =  setInterval(function(){
+    //
+    //                 if($(window).scrollTop()  >= GetSecsHeight(2,sec)) {
+    //                     clearInterval(inter);
+    //                     $(sec[2]).css('position', 'relative').css('top',0);
+    //                     $(sec[1]).css('position', 'relative').css('top',0);
+    //                     flag[1] = false;
+    //                 }
+    //                 else {
+    //                     $('#mainNav').css('position','relative');
+    //                     $(window).scrollTop($(window).scrollTop() + 1);
+    //                     $(sec[2]).css('position', 'relative').css('top', (+$(sec[2]).css('position', 'relative').css('top').replace('px', '') + 1) + 'px');
+    //                     $(sec[1]).css('position', 'relative').css('top', (+$(sec[2]).css('position', 'relative').css('top').replace('px', '') + 1) + 'px');
+    //                 }
+    //             },30);
+    //
+    //
+    //
+    //
+    //         if($(window).scrollTop() > top_sections)
+    //             $('#mainNav').css('position','fixed');
+    //         else
+    //             $('#mainNav').css('position','relative');
+    //
+    //
+    //     });
+    //
+    //
+    //
+    // });
+
+})
+
+(jQuery); // End of use strict
+
+
+
+

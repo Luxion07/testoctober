@@ -17,7 +17,7 @@ header {
     color: @header-color;
     .heading-font;
     background: url("../images/header_bg.png") no-repeat;
-    background-size: 100%;
+    background-size: cover;
     text-align: center;
     .wrapper {
         font-size: 14px;
@@ -57,6 +57,7 @@ header {
 
 .download {
     background-color: #0f1522;
+    z-index: -1;
     .pete_text {
         letter-spacing: 9px;
         line-height: 40px;
@@ -79,6 +80,7 @@ header {
 }
 
 .menu {
+    background-color: #fff;
     .text1 {
         margin-top: 100px;
         margin-bottom: 60px;
@@ -117,19 +119,47 @@ header {
         min-height: 130px;
         border-right: solid 1px #d8d8d8;
     }
+    .rotate {
+        transform: rotate(-90deg);
+        position: relative;
+        width: 195px;
+        /* margin-right: 17px; */
+        right: 670px;
+        top: 524px;
+        letter-spacing: 5px;
+        font-size: 12px;
+        line-height: 26px;
+    }
+    .gline{
+        margin-top: 46px;
+    }
+
 
 }
 
 .gallery {
     background-color: #f7f7f7;
+    min-height: 950px;
     img {
         margin-top: 80px;
         margin-bottom: 80px;
+    }
+    .rotate{
+        transform: rotate(-90deg);
+        letter-spacing: 5px;
+        position: relative;
+        width: 301px;
+        margin-right: 71px;
+        right: 100px;
+        top: 478px;
+
+        
     }
 }
 
 .reviews {
     background-color: #0f1522;
+    min-height: 950px;
     .kav {
         font-size: 80px;
         opacity: 0.3;
@@ -145,10 +175,21 @@ header {
         margin-top: 50px;
         margin-bottom: 200px;
     }
+    .rotate{
+        transform: rotate(-90deg);
+        letter-spacing: 5px;
+        position: relative;
+        width: 301px;
+        /* margin-right: 17px; */
+        right: 110px;
+        top: 445px;
+
+    }
 }
 
 #instagram {
     background-color: white;
+    min-height: 950px;
     .insta {
         margin-top: 50px;
         margin-bottom: 50px;
@@ -159,16 +200,38 @@ header {
     .image_insta {
         padding: 0;
     }
+    .rotate{
+
+        transform: rotate(-90deg);
+        letter-spacing: 5px;
+        position: relative;
+        width: 301px;
+        /* margin-right: 17px; */
+        right: 91px;
+        top: 480px;
+        color: #000;
+    }
 }
 
 footer {
     background-color: #0e1326;
+
     color: @header-color;
     .row > div {
         margin-top: 220px;
 
     }
-
+    .rotate{
+        transform: rotate(-90deg);
+        position: relative;
+        width: 301px;
+        /* margin-right: 17px; */
+        right: 110px;
+        top: 188px;
+        letter-spacing: 3px;
+        font-size: 23px;
+        line-height: 40px;
+    }
     .footer_left {
         border-right: solid 1px #fff;
         padding-bottom: 200px;
@@ -200,20 +263,48 @@ footer {
     padding: 0;
     margin: 15px;
 }
-#mainNav{
-    .container{
+#mainNav {
+    .container {
         margin-top: 20px;
+        .navbar-collapse {
+            letter-spacing: 5px;
+            line-height: 26px;
+            font-size: 12px;
+        }
     }
     min-height: 100px;
-    .img-right{
+    .img-right {
         margin-top: 15px;
-        letter-spacing: 4.29px;
-        line-height: 26px;
-}
-
-
-    .img-left{
-        font-size: 23px;
 
     }
+
+    .img-left {
+        font-size: 23px;
+        letter-spacing: 3px;
+    }
 }
+
+
+//  responsable
+@media (min-width: @desktop) {
+
+}
+
+@media (max-width: @tablet) {
+  header, .menu{
+    .header_title{
+      font-size: 19vw;
+    }
+  }
+}
+
+@media (max-width: @phone){
+  .menu{
+    .header_title{
+      font-size: 17vw;
+     }
+  }
+
+}
+
+
