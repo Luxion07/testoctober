@@ -47,6 +47,18 @@ elixir(function(mix) {
     //     'node_modules/bootstrap-sass/assets/javascripts/bootstrap.min.js',
     //     'public/js/vendor/bootstrap'
     // )
+    //  .copy([
+    //      './node_modules/jquery-scrollify/jquery.scrollify.min.js'
+    //  ], 'assets/js')
+
+
+        .copy([
+            './node_modules/fullpage.js/dist/jquery.fullpage.min.js'
+        ], 'assets/js')
+        .copy([
+            './node_modules/fullpage.js/dist/jquery.fullpage.css'
+        ], 'assets/css')
+
     /**
      * Process frontend SCSS stylesheets
      */
@@ -77,6 +89,7 @@ elixir(function(mix) {
         .scripts([
             'new-age.js'
         ], 'assets/js/new-age.min.js')
+
         /**
          * Process backend SCSS stylesheets
          */
