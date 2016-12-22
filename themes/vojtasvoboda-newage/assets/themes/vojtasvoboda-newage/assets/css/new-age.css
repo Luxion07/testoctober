@@ -7001,6 +7001,7 @@ header .vline {
 }
 footer {
   background-color: #0e1326;
+  min-height: 950px;
   color: #fff;
 }
 footer .footer_left,

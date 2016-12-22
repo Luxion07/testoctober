@@ -3,22 +3,22 @@
 
 
     // Highlight the top nav as scrolling occurs
-    // $('body').scrollspy({
-    //     target: '.navbar-fixed-top',
-    //     offset: 100
-    // });
+    $('body').scrollspy({
+        target: '.navbar-fixed-top',
+        offset: 100
+    });
 
     // Closes the Responsive Menu on Menu Item Click
-    // $('.navbar-collapse ul li a').click(function () {
-    //     $('.navbar-toggle:visible').click();
-    // });
+    $('.navbar-collapse ul li a').click(function () {
+        $('.navbar-toggle:visible').click();
+    });
 
     // Offset for Main Navigation
-    // $('#mainNav').affix({
-    //     offset: {
-    //         top: 50
-    //     }
-    // });
+    $('#mainNav').affix({
+        offset: {
+            top: 50
+        }
+    });
     if (screen.width > 768  ) {
         $(document).ready(function () {
             /*  document.onmousewheel=document.onwheel=function(){
@@ -29,9 +29,9 @@
              if (e.keyCode>=33&&e.keyCode<=40) return false;
              }*/
 
-            // $('#mainNav').css('position', 'relative');
-            // $('#mainNav').clone().prependTo($('#menu'));
-            // $('#mainNav').remove();
+            $('#mainNav').css('position', 'relative');
+            $('#mainNav').clone().prependTo($('#menu'));
+            $('#mainNav').remove();
 
             // jQuery for page scrolling feature - requires jQuery Easing plugin
             $('a.page-scroll').bind('click', function (event) {
@@ -120,28 +120,28 @@
                 //for(var i = sec.length; i < 3; i--)
 
 
-                // if (window_height > GetSecsHeight(2, sec) && flag[1])
-                    // var inter = setInterval(function () {
-                    //
-                    //     if ($(window).scrollTop() >= GetSecsHeight(2, sec)) {
-                    //         clearInterval(inter);
-                    //         $(sec[2]).css('position', 'relative').css('top', 0);
-                    //         $(sec[1]).css('position', 'relative').css('top', 0);
-                    //         flag[1] = false;
-                    //     }
-                    //     else {
-                    //         $('#mainNav').css('position', 'relative');
-                    //         $(window).scrollTop($(window).scrollTop() + 1);
-                    //         $(sec[2]).css('position', 'relative').css('top', (+$(sec[2]).css('position', 'relative').css('top').replace('px', '') + 1) + 'px');
-                    //         $(sec[1]).css('position', 'relative').css('top', (+$(sec[2]).css('position', 'relative').css('top').replace('px', '') + 1) + 'px');
-                    //     }
-                    // }, 30);
+                if (window_height > GetSecsHeight(2, sec) && flag[1])
+                var inter = setInterval(function () {
+
+                    if ($(window).scrollTop() >= GetSecsHeight(2, sec)) {
+                        clearInterval(inter);
+                        $(sec[2]).css('position', 'relative').css('top', 0);
+                        $(sec[1]).css('position', 'relative').css('top', 0);
+                        flag[1] = false;
+                    }
+                    else {
+                        $('#mainNav').css('position', 'relative');
+                        $(window).scrollTop($(window).scrollTop() + 1);
+                        $(sec[2]).css('position', 'relative').css('top', (+$(sec[2]).css('position', 'relative').css('top').replace('px', '') + 1) + 'px');
+                        $(sec[1]).css('position', 'relative').css('top', (+$(sec[2]).css('position', 'relative').css('top').replace('px', '') + 1) + 'px');
+                    }
+                }, 30);
 
 
-                // if ($(window).scrollTop() > top_sections)
-                //     $('#mainNav').css('position', 'fixed');
-                // else
-                //     $('#mainNav').css('position', 'relative');
+                if ($(window).scrollTop() > top_sections)
+                    $('#mainNav').css('position', 'fixed');
+                else
+                    $('#mainNav').css('position', 'relative');
 
 
             });
@@ -169,25 +169,80 @@
         //   ============================        jquery scrollify            =============================
 
 
-    //     $(function () {
-    //         $.scrollify({
-    //             section: "section",
-    //         });
+        //     $(function () {
+        //         $.scrollify({
+        //             section: "section",
+        //         });
+        //     });
+        //
+    }
+    // $(document).ready(function(){
+    //     var options = {
+    //         offset: '#menu'
+    //         // offset: 500
+    //     };
+    //     var header = new Headhesive('.header-oi',options);
+    //
+    //
+    //     // console.log(header);
+    //
+    //     $('#page-top').fullpage({
+    //         anchors:['first-section', 'second-section', 'third-section', 'fourth-section', 'five-section', 'six-section', 'seven-section'],
+    //
+    //         scrollingSpeed: 3000,
+    //         //menu: '#mainNav',
+    //         fitToSection: false,
+    //         normalScrollElements: '#menu',
+    //         bigSectionsDestination: null,
+    //
+    //         loopBottom: true,
+    //
+    //         afterLoad: function(anchorLink, index){
+    //             var loadedSection = $(this);
+    //
+    //
+    //             console.log('Zashel');
+    //             console.log(arguments);
+    //             //using anchorLink
+    //             //   if(index != 1 && index !=2 ){
+    //             //       header.stick();
+    //             //   }
+    //
+    //         },
+    //         onLeave: function (index, nextIndex, direction) {
+    //             console.log('Pokinul');
+    //             console.log(arguments);
+    //             // if(nextIndex == 1 || nextIndex ==2 ){
+    //             //     header.unstick();
+    //             // }
+    //
+    //
+    //
+    //             if(index == 2 && nextIndex == 3){
+    //                 //  $('#download').css('position', 'absolute');
+    //                 // $('#menu').css('margin-top', '683px');
+    //
+    //
+    //
+    //
+    //                 $('#download').css('display', 'block');
+    //                 $('#download').slideToggle(3000);
+    //                 setFitToSection(false);
+    //
+    //
+    //
+    //
+    //                 //     header.stick();
+    //
+    //             }else{
+    //
+    //             }
+    //         }
+    //
     //     });
     //
-     }
-    $(document).ready(function(){
-        $('#page-top').fullpage({
-            anchors:['first-section', 'second-section', 'third-section', 'fourth-section'],
-
-            scrollingSpeed: 1000,
-            menu: '#mainNav',
-            fitToSection: false,
-            // normalScrollElements: '#menu',
-            bigSectionsDestination: null,
-            continuousVertical: true
-        });
-    });
+    //
+    // });
 
 
 

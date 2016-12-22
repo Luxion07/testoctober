@@ -58,6 +58,9 @@ elixir(function(mix) {
         .copy([
             './node_modules/fullpage.js/dist/jquery.fullpage.css'
         ], 'assets/css')
+        .copy([
+            './node_modules/headhesive/dist/headhesive.min.js'
+        ], 'assets/js')
 
     /**
      * Process frontend SCSS stylesheets
