@@ -157,14 +157,15 @@
 
 
 
-        $('#page-top').fullpage({
+        // var fullpage =
+            $('#page-top').fullpage({
             anchors:['first-section', 'second-section', 'third-section', 'fourth-section', 'five-section', 'six-section', 'seven-section'],
 
             scrollingSpeed: 3000,
             menu: '#mainNav',
 
             normalScrollElements: '#menu',
-            bigSectionsDestination: null,
+            bigSectionsDestination: top,
             easing: 'easeInOutCubic',
             loopBottom: true,
             hybrid: true,
@@ -180,18 +181,33 @@
                 //       header.stick();
                 //   }
 
+                if(index == 3){
+                    $('#download')
+                        .css('position', 'relative')
+                        .css('z-index', 0);
+                    $('#menu')
+                        .css('margin-top', '0')
+                        .css('z-index', 0);
+
+                    var $el = $('#gallery');  //record the elem so you don't crawl the DOM everytime
+                    var bottom = $el.position().top;
+                    var inter = setInterval(function () {
+                        //
+                        if (window.scrollY >= ($('#gallery').position().top - window.innerHeight)) {
+                            clearInterval(inter);
+                            $.fn.fullpage.moveSectionDown();
+                        }
+                    }, 30);
+                }
+
+
             },
             onLeave: function (index, nextIndex, direction) {
                 console.log('Pokinul');
                 console.log(arguments);
-                // if(nextIndex == 1 || nextIndex ==2 ){
-                //     header.unstick();
-                // }
-
-
 
                 if(index == 2 && nextIndex == 3 && direction == 'down'){
-                    console.log('oi');
+
                     $('#menu')
                         .css('margin-top', secondSection.css('height'))
                         .css('z-index', 101);
@@ -205,10 +221,6 @@
                     //  $('#download').css('position', 'absolute');
                     // $('#menu').css('margin-top', '683px');
 
-
-
-
-
                     // $('#download').css('display', 'block');
                     // $('#download').slideToggle(3000);
 
@@ -216,26 +228,6 @@
                    // setFitToSection(false);
 
 
-
-
-
-
-
-
-                }else{
-                    $('#download')
-                        .css('position', 'relative');
-
-                }
-                if(index == 3 && nextIndex == 4 && direction == 'down'){
-
-                    $('#download')
-                        .css('position', 'relative')
-                        .css('z-index', '0');
-                    $('#menu')
-                        .css('position', 'relative')
-                        .css('margin-top', '0')
-                        .css('z-index', '0');
                 }
 
                 if(index == 4 && nextIndex == 3 && direction == 'up'){
@@ -243,21 +235,9 @@
                 }
             }
 
-
         });
 
-
-
     });
-
-
-
-
-
-
-
-
-
 
 })
 
