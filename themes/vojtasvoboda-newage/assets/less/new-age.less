@@ -5,22 +5,25 @@
 
 // Global Components
 .header-oi{
-    transform: translateY(-100%);
-    display: none;
-    position: fixed;
-    top: 0;                       /* make sure it's at the top */
+    //transform: translateY(-100%);
+    //display: none;
+    position: absolute;
+    //top: 0;                       /* make sure it's at the top */
     width: 100%;
-    z-index: 9999;
-    transition: all 300ms ease-in-out;
+    //z-index: 9999;
+   // transition: all 300ms ease-in-out;
 }
 .headhesive--stick {
-    transform: translateY(0%); /* move it back on screen */
+    //transform: translateY(0%); /* move it back on screen */
     z-index: 9999;
-    display: block;
+    display: inline-block;
+    position: fixed;
 
 
 
 }
+
+
 
 html,
 body {
@@ -102,6 +105,9 @@ header {
 
 .menu {
     background-color: #fff;
+    .text_up{
+        margin-top: 200px!important;
+    }
     .text1 {
         margin-top: 100px;
         margin-bottom: 60px;

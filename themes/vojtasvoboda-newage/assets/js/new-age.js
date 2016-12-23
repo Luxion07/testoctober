@@ -3,22 +3,22 @@
 
 
     // Highlight the top nav as scrolling occurs
-    // $('body').scrollspy({
-    //     target: '.navbar-fixed-top',
-    //     offset: 100
-    // });
+    $('body').scrollspy({
+        target: '.navbar-fixed-top',
+        offset: 100
+    });
 
     // Closes the Responsive Menu on Menu Item Click
-    // $('.navbar-collapse ul li a').click(function () {
-    //     $('.navbar-toggle:visible').click();
-    // });
+    $('.navbar-collapse ul li a').click(function () {
+        $('.navbar-toggle:visible').click();
+    });
 
     // Offset for Main Navigation
-    // $('#mainNav').affix({
-    //     offset: {
-    //         top: 50
-    //     }
-    // });
+    $('#mainNav').affix({
+        offset: {
+            top: 50
+        }
+    });
     if (screen.width > 768  ) {
         // $(document).ready(function () {
         //
@@ -124,12 +124,26 @@
         //     });
         //
     }
+
+
+
     $(document).ready(function(){
+
+        var a = parseInt($('#intro').css('height'),10);
+        var b = parseInt($('#download').css('height'),10);
+        var c = parseInt($('.header-oi').css('height'),10);
+        var d = a+b+c;
+        console.log(d);
         var options = {
-            offset: '#menu'
+            offset: d,
+            //offsetSide: 'bottom'
+
             // offset: 500
         };
-        var header = new Headhesive('.header-oi',options);
+        var header = new Headhesive('.header-oi', options);
+
+
+
 
         var
             firstSection      = $('#intro'),
@@ -140,13 +154,16 @@
             sixSection        = $('#instagram'),
             sevenSection      = $('#booking');
 
+
+
+
         $('#page-top').fullpage({
             anchors:['first-section', 'second-section', 'third-section', 'fourth-section', 'five-section', 'six-section', 'seven-section'],
 
             scrollingSpeed: 3000,
-            //menu: '#mainNav',
+            menu: '#mainNav',
 
-            //normalScrollElements: '#menu',
+            normalScrollElements: '#menu',
             bigSectionsDestination: null,
             easing: 'easeInOutCubic',
             loopBottom: true,
@@ -182,8 +199,12 @@
                         .css('position', 'fixed')
                         .css('top', 0)
                         .css('z-index', 100);
+
+
+
                     //  $('#download').css('position', 'absolute');
                     // $('#menu').css('margin-top', '683px');
+
 
 
 
@@ -197,17 +218,43 @@
 
 
 
-                    //     header.stick();
+
+
+
 
                 }else{
+                    $('#download')
+                        .css('position', 'relative');
 
                 }
+                if(index == 3 && nextIndex == 4 && direction == 'down'){
+
+                    $('#download')
+                        .css('position', 'relative')
+                        .css('z-index', '0');
+                    $('#menu')
+                        .css('position', 'relative')
+                        .css('margin-top', '0')
+                        .css('z-index', '0');
+                }
+
+                if(index == 4 && nextIndex == 3 && direction == 'up'){
+                    $('#menu').css('margin-top', '0');
+                }
             }
+
 
         });
 
 
+
     });
+
+
+
+
+
+
 
 
 
