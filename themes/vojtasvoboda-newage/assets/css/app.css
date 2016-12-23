@@ -6736,6 +6736,25 @@ button.close {
     right: auto;
   }
 }
+.header-oi {
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+  display: none;
+  position: fixed;
+  top: 0;
+  /* make sure it's at the top */
+  width: 100%;
+  z-index: 9999;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+.headhesive--stick {
+  -webkit-transform: translateY(0%);
+  transform: translateY(0%);
+  /* move it back on screen */
+  z-index: 9999;
+  display: block;
+}
 html,
 body {
   height: 100%;

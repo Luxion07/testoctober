@@ -6794,6 +6794,22 @@ button.close {
     right: auto;
   }
 }
+.header-oi {
+  transform: translateY(-100%);
+  display: none;
+  position: fixed;
+  top: 0;
+  /* make sure it's at the top */
+  width: 100%;
+  z-index: 9999;
+  transition: all 300ms ease-in-out;
+}
+.headhesive--stick {
+  transform: translateY(0%);
+  /* move it back on screen */
+  z-index: 9999;
+  display: block;
+}
 html,
 body {
   height: 100%;
