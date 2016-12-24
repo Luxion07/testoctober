@@ -6736,17 +6736,27 @@ button.close {
     right: auto;
   }
 }
+.header-oi {
+  position: absolute;
+  width: 100%;
+}
+.headhesive--stick {
+  z-index: 9999;
+  display: inline-block;
+  position: fixed;
+}
 html,
 body {
   height: 100%;
   width: 100%;
 }
 header {
+  min-height: 950px;
   color: #fff;
   font-family: 'Montserrat', 'sans-serif';
   font-weight: 400;
   background: url("../images/header_bg.png") no-repeat;
-  background-size: 100%;
+  background-size: cover;
   text-align: center;
 }
 header .row {
@@ -6780,10 +6790,12 @@ header .header_button {
 }
 header .vline {
   border-right: solid 1px #fff;
-  min-height: 30px;
+  min-height: 142px;
 }
 .download {
   background-color: #0f1522;
+  margin-top: -1px;
+  z-index: -1;
 }
 .download .pete_text {
   letter-spacing: 9px;
@@ -6803,6 +6815,14 @@ header .vline {
 .download .vline {
   min-height: 125px;
   border-right: solid 1px #fff;
+  position: relative;
+  bottom: 53px;
+}
+.menu {
+  background-color: #fff;
+}
+.menu .text_up {
+  margin-top: 200px!important;
 }
 .menu .text1 {
   margin-top: 100px;
@@ -6842,20 +6862,54 @@ header .vline {
   min-height: 130px;
   border-right: solid 1px #d8d8d8;
 }
+.menu .rotate {
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  position: relative;
+  width: 195px;
+  /* margin-right: 17px; */
+  right: 670px;
+  top: 524px;
+  letter-spacing: 5px;
+  font-size: 12px;
+  line-height: 26px;
+}
+.menu .gline {
+  margin-top: 46px;
+}
+.menu .clear {
+  clear: both;
+}
 .gallery {
   background-color: #f7f7f7;
+  min-height: 950px;
 }
 .gallery img {
   margin-top: 80px;
   margin-bottom: 80px;
 }
+.gallery .rotate {
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  letter-spacing: 5px;
+  position: relative;
+  width: 301px;
+  margin-right: 71px;
+  right: 100px;
+  top: 478px;
+}
 .reviews {
   background-color: #0f1522;
+  min-height: 950px;
+}
+.reviews .nav_slider a {
+  color: #fff;
+}
+.reviews .nav_slider a .left {
+  margin-right: 10px;
 }
 .reviews .kav {
-  font-size: 80px;
-  opacity: 0.3;
-  font-weight: 700;
+  margin-bottom: 40px;
   margin-top: 180px;
 }
 .reviews .text1 {
@@ -6867,8 +6921,23 @@ header .vline {
   margin-top: 50px;
   margin-bottom: 200px;
 }
+.reviews .rotate {
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  letter-spacing: 5px;
+  position: relative;
+  width: 301px;
+  /* margin-right: 17px; */
+  right: 110px;
+  top: 445px;
+}
+.reviews .vline {
+  border-right: solid 1px #fff;
+  min-height: 230px;
+}
 #instagram {
   background-color: white;
+  min-height: 950px;
 }
 #instagram .insta {
   margin-top: 50px;
@@ -6880,12 +6949,37 @@ header .vline {
 #instagram .image_insta {
   padding: 0;
 }
+#instagram .rotate {
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  letter-spacing: 5px;
+  position: relative;
+  width: 301px;
+  /* margin-right: 17px; */
+  right: 91px;
+  top: 480px;
+  color: #000;
+}
 footer {
   background-color: #0e1326;
+  min-height: 950px;
   color: #fff;
 }
-footer .row > div {
+footer .footer_left,
+footer .footer_right {
   margin-top: 220px;
+}
+footer .rotate {
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  position: relative;
+  width: 301px;
+  /* margin-right: 17px; */
+  right: 110px;
+  top: 188px;
+  letter-spacing: 3px;
+  font-size: 23px;
+  line-height: 40px;
 }
 footer .footer_left {
   border-right: solid 1px #fff;
@@ -6896,7 +6990,7 @@ footer .footer_left div {
   padding-right: 0;
 }
 footer .contact_footer {
-  margin-top: 60px;
+  margin-top: 100px;
 }
 footer .footer_right p {
   letter-spacing: 5px;
@@ -6921,13 +7015,59 @@ footer .footer_right p {
 #mainNav .container {
   margin-top: 20px;
 }
+#mainNav .container .navbar-collapse {
+  letter-spacing: 5px;
+  line-height: 26px;
+  font-size: 12px;
+}
 #mainNav .img-right {
   margin-top: 15px;
-  letter-spacing: 4.29px;
-  line-height: 26px;
 }
 #mainNav .img-left {
   font-size: 23px;
+  letter-spacing: 3px;
+}
+#mainNav .fa {
+  font-size: 22px;
+  margin-left: 10px;
+}
+@media (min-width: 1024px) {
+}
+@media (min-width: 1024px) and (max-width: 1199px) {
+  .menu .rotate {
+    right: 810px;
+    top: 605px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .menu .rotate {
+    right: 810px;
+    top: 617px;
+  }
+}
+@media (max-width: 768px) {
+  header .header_title,
+  .menu .header_title {
+    font-size: 19vw;
+  }
+  .footer_left,
+  .footer_right {
+    padding-bottom: 50px!important;
+  }
+  .footer_right {
+    margin-top: 0!important;
+  }
+  .contact_footer {
+    margin-top: 50px!important;
+  }
+  .footer_left {
+    margin-top: 50px!important;
+  }
+}
+@media (max-width: 421px) {
+  .menu .header_title {
+    font-size: 17vw;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */

@@ -25,6 +25,7 @@ description = "Default layout"
 
     <!-- Theme CSS -->
     <link href="{{ 'assets/css/bootstrap.css' | theme }}" rel="stylesheet">
+    <link href="{{ 'assets/css/jquery.fullpage.css' | theme }}" rel="stylesheet">
     <link href="{{ 'assets/css/app.css' | theme }}" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -32,20 +33,28 @@ description = "Default layout"
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+
     <![endif]-->
 
 </head>
 
-<body id="page-top">
+<body >
+<div id="page-top">
 
-{% partial 'modules/nav' %}
-{% page %}
-{% partial 'modules/footer' %}
-
+    {% page %}
+    {% partial 'modules/footer' %}
+</div>
 <script src="{{ 'assets/vendor/jquery/jquery.min.js' | theme }}"></script>
 <script src="{{ 'assets/vendor/bootstrap/js/bootstrap.min.js' | theme }}"></script>
 <script src="{{ 'assets/js/jquery.easing.min.js' | theme }}"></script>
+
+<script src="{{ 'assets/js/jquery.fullpage.min.js' | theme }}"></script>
+<script src="{{ 'assets/js/headhesive.min.js' | theme }}"></script>
+
+<script src="{{ 'assets/js/jquery.scrollify.min.js' | theme }}"></script>
 <script src="{{ 'assets/js/new-age.min.js' | theme }}"></script>
+
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>-->
 
 </body>
 </html>

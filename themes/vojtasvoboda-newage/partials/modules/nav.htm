@@ -1,7 +1,9 @@
-<nav
-    id="mainNav"
-    class="navbar {{ this.theme.menu_transparent ? 'navbar-default' : 'navbar-inverse' }} navbar-fixed-top"
->
+
+
+<!--<nav-->
+        <!--id="mainNav"-->
+        <!--class="navbar {{ this.theme.menu_transparent ? 'navbar-default' : 'navbar-inverse' }}  header-oi headhesive&#45;&#45;clone "-->
+<!--&gt;-->
     <!--<div class="container">-->
         <!--<div class="navbar-header">-->
             <!--<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">-->
@@ -10,37 +12,64 @@
             <!--<a class="navbar-brand page-scroll" href="#page-top">{{ this.theme.site_title }}</a>-->
         <!--</div>-->
 
-        <!--<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">-->
-            <!--<ul class="nav navbar-nav ">-->
+        <!--<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">-->
+            <!--<ul class="nav navbar-nav navbar-right">-->
                 <!--{% partial 'modules/nav-items.htm' %}-->
             <!--</ul>-->
-           <!---->
         <!--</div>-->
-        <!--<div class="navbar-header navbar-right">-->
-            <!--<img src="themes/vojtasvoboda-newage/assets/images/social1.png" alt="X">-->
-        <!--</div>-->
-
-
     <!--</div>-->
-
-    <div class="container">
-            <div class="col-sm-2 img-left">
-                <a class="navbar-brand page-scroll" href="#page-top">{{ this.theme.site_title }}</a>
-            </div>
+<!--</nav>-->
 
 
 
-        <div class="collapse navbar-collapse col-sm-8" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav ">
-                {% partial 'modules/nav-items.htm' %}
-            </ul>
+<nav
+id="mainNav"
+class="navbar {{ this.theme.menu_transparent ? 'navbar-default' : 'navbar-inverse' }} header-oi headhesive--clone"
+>
+<!--<div class="container">-->
+<!--<div class="navbar-header">-->
+<!--<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">-->
+<!--<span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>-->
+<!--</button>-->
+<!--<a class="navbar-brand page-scroll" href="#page-top">{{ this.theme.site_title }}</a>-->
+<!--</div>-->
 
-        </div>
-        <div class="col-sm-2 img-right">
-            <img src="themes/vojtasvoboda-newage/assets/images/social1.png" alt="X">
-        </div>
+<!--<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">-->
+<!--<ul class="nav navbar-nav ">-->
+<!--{% partial 'modules/nav-items.htm' %}-->
+<!--</ul>-->
+
+<!--</div>-->
+<!--<div class="navbar-header navbar-right">-->
+<!--<img src="themes/vojtasvoboda-newage/assets/images/social1.png" alt="X">-->
+<!--</div>-->
 
 
-    </div>
+<!--</div>-->
+
+<div class="container">
+<div class="col-sm-3 img-left">
+<a class="navbar-brand page-scroll" href="#first-section">{{ this.theme.site_title }}</a>
+</div>
+
+
+
+<div class="collapse navbar-collapse col-sm-7" id="bs-example-navbar-collapse-1">
+<ul class="nav navbar-nav " >
+{% partial 'modules/nav-items.htm' %}
+</ul>
+
+</div>
+<div class="col-sm-2 text-right img-right">
+    <i class="fa fa-twitter" aria-hidden="true"></i>
+    <i class="fa fa-facebook" aria-hidden="true"></i>
+    <i class="fa fa-instagram" aria-hidden="true"></i>
+</div>
+
+
+</div>
 
 </nav>
+
+
+
