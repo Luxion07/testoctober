@@ -7026,6 +7026,10 @@ footer .footer_right p {
   font-size: 23px;
   letter-spacing: 3px;
 }
+#mainNav .fa {
+  font-size: 22px;
+  margin-left: 10px;
+}
 @media (min-width: 1024px) {
 }
 @media (min-width: 1024px) and (max-width: 1199px) {

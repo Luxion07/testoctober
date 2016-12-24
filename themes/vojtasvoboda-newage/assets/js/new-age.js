@@ -19,6 +19,26 @@
             top: 50
         }
     });
+
+    //   ============================        jquery slider            =============================
+
+    $('.carousel').on('slid.bs.carousel', function () {
+
+        var carouselData = $(this).data('bs.carousel');
+
+        var currentIndex = carouselData.getItemIndex(carouselData.$element.find('.item.active'));
+        var total = carouselData.$items.length;
+
+
+        var text = (currentIndex + 1) + " of " + total;
+
+
+        $('#carousel-index').text(text);
+        $('#carousel-index1').text(text);
+
+    });
+    //   ============================        jquery slider            =============================
+
     if (screen.width > 768  ) {
         // $(document).ready(function () {
         //
@@ -96,24 +116,7 @@
 
 
         // });
-        //   ============================        jquery slider            =============================
 
-        $('.carousel').on('slid.bs.carousel', function () {
-
-            var carouselData = $(this).data('bs.carousel');
-
-            var currentIndex = carouselData.getItemIndex(carouselData.$element.find('.item.active'));
-            var total = carouselData.$items.length;
-
-
-            var text = (currentIndex + 1) + " of " + total;
-
-
-            $('#carousel-index').text(text);
-            $('#carousel-index1').text(text);
-
-        });
-        //   ============================        jquery slider            =============================
 
         //   ============================        jquery scrollify            =============================
 
@@ -124,7 +127,7 @@
         //         });
         //     });
         //
-    }
+
 
 
 
@@ -239,6 +242,7 @@
         });
 
     });
+    }
 
 })
 
