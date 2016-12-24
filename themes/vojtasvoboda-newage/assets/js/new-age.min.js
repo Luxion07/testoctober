@@ -110,6 +110,7 @@
 
 
             $('#carousel-index').text(text);
+            $('#carousel-index1').text(text);
 
         });
         //   ============================        jquery slider            =============================

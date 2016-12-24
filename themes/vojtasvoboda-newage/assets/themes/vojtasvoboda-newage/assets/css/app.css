@@ -6873,6 +6873,8 @@ header .vline {
 .download .vline {
   min-height: 125px;
   border-right: solid 1px #fff;
+  position: relative;
+  bottom: 53px;
 }
 .menu {
   background-color: #fff;
