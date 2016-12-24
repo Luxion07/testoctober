@@ -6814,6 +6814,7 @@ header .vline {
 .menu .title_f {
   font-size: 12px;
   letter-spacing: 5px;
+  text-transform: uppercase;
 }
 .menu .header_title {
   font-size: 140px;
