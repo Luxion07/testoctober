@@ -45,7 +45,17 @@ class ThemeData extends Model
      * @var array Relations
      */
     public $attachOne = [];
+    public $attachMany = [
+        'gallery_files' =>  ['System\Models\File', 'order' => 'sort_order']
+    ];
 
+    public $hasOne = [
+        'tides' => ['Vanya\Models\Tides']
+    ];
+
+    public $hasMany = [
+        'photos' => ['Vanya\Models\InstaPhoto'],
+    ];
     /**
      * @var ThemeData Cached array of objects
      */
