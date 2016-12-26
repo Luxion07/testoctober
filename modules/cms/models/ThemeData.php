@@ -45,6 +45,17 @@ class ThemeData extends Model
      * @var array Relations
      */
     public $attachOne = [];
+    public $attachMany = [
+        'gallery_files' =>  ['System\Models\File', 'order' => 'sort_order']
+    ];
+
+    public $hasOne = [
+        'tides' => ['Vanya\Models\Tides']
+    ];
+
+    public $hasMany = [
+        'photos' => ['Vanya\Models\InstaPhoto'],
+    ];
 
     /**
      * @var ThemeData Cached array of objects
@@ -73,7 +84,7 @@ class ThemeData extends Model
 
     /**
      * Returns a cached version of this model, based on a Theme object.
-     * @param $theme Cms\Classes\Theme
+     * @param $theme CmsTheme
      * @return self
      */
     public static function forTheme($theme)

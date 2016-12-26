@@ -1,0 +1,66 @@
+<section id="menu" class="menu">
+    <div class="container">
+        <div class="row">
+            <div class="text-center text1">
+                <div>16 HIGH ST, POOLE, BH15 1BP | 01202 674970</div>
+            </div>
+            <div class="header_title text-center">
+                <p>TODAY’S MENU</p>
+            </div>
+            <div class="text-center pete_text1 col-sm-6 col-sm-offset-3 ">
+                <p>That unbridled mumbled up lantern absently fluent  honey dalmatian dear dreamed less walrus the much
+                    goodness erratic jeez that yikes wrung acrimoniously condescending.</p>
+            </div>
+            <div class="text-center col-sm-4 col-sm-offset-4 text1">
+                <div>STARTERS</div>
+                <img src="themes/vojtasvoboda-newage/assets/images/xx.png" alt="X">
+            </div>
+            <div class="text-center f_blocks col-sm-10 col-sm-offset-1">
+                {% for item in this.theme.starters_list %}
+                <div class="col-sm-5 pad col-sm-offset-1">
+                    <p class="text-center">- £{{item.price}} -</p>
+                    <p class="text-center title_f">{{item.name}}</p>
+                    <p class="text-center">{{item.text}}</p>
+                </div>
+                {% endfor %}
+            </div>
+            <div class="text-center col-sm-2 col-sm-offset-5  text1 ">
+                <div>MAINS</div>
+                <img src="themes/vojtasvoboda-newage/assets/images/xx.png" alt="X">
+            </div>
+            <div class="text-center f_blocks col-sm-10 col-sm-offset-1">
+                {% for item in this.theme.mains_list %}
+                <div class="col-sm-5 pad col-sm-offset-1">
+                    <p class="text-center">- £{{item.price}} -</p>
+                    <p class="text-center title_f">{{item.name}}</p>
+                    <p class="text-center">{{item.text}}</p>
+                </div>
+                {% endfor %}
+            </div>
+            <div class="text-center border col-sm-10 col-sm-offset-1">
+                <div class="col-sm-6 pad col-sm-offset-3">
+                    <p class="text-center">- £{{this.theme.catch_of_day_price}} -</p>
+                    <p class="text-center title_f">{{this.theme.catch_of_day_name}}</p>
+                    <p class="text-center">{{this.theme.catch_of_day_description}}</p>
+                </div>
+            </div>
+            <div class="text-center col-sm-2 col-sm-offset-5  text1 ">
+                <div>DESSERTS</div>
+                <img src="themes/vojtasvoboda-newage/assets/images/xx.png" alt="X">
+            </div>
+            <div class="text-center f_blocks col-sm-10 col-sm-offset-1">
+                {% for item in this.theme.deserts_list %}
+                <div class="col-sm-5 pad col-sm-offset-1">
+                    <p class="text-center">- £{{item.price}} -</p>
+                    <p class="text-center title_f">{{item.name}}</p>
+                    <p class="text-center">{{item.text}}</p>
+                </div>
+                {% endfor %}
+            </div>
+            <div class="col-sm-6 vline">
+
+            </div>
+
+        </div>
+    </div>
+</section>

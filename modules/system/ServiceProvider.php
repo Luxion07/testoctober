@@ -84,7 +84,7 @@ class ServiceProvider extends ModuleServiceProvider
         /*
          * Boot plugins
          */
-        $pluginManager = PluginManager::instance()->bootAll();
+        PluginManager::instance()->bootAll();
 
         parent::boot('system');
     }
@@ -219,6 +219,8 @@ class ServiceProvider extends ModuleServiceProvider
          */
         $this->registerConsoleCommand('october.up', 'System\Console\OctoberUp');
         $this->registerConsoleCommand('october.down', 'System\Console\OctoberDown');
+        $this->registerConsoleCommand('getTides', 'System\Console\GetTides');
+        $this->registerConsoleCommand('getPhotos', 'System\Console\GetPhotos');
         $this->registerConsoleCommand('october.update', 'System\Console\OctoberUpdate');
         $this->registerConsoleCommand('october.util', 'System\Console\OctoberUtil');
         $this->registerConsoleCommand('october.mirror', 'System\Console\OctoberMirror');

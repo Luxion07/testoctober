@@ -1,0 +1,16 @@
+<section id="reviews" class="reviews bg-primary">
+    <div class="container">
+        {% for item in this.theme.reviews_list%}
+        <div class="text-center col-sm-2 col-sm-offset-5">
+            <p class="kav">“</p>
+        </div>
+        <div class="text-center text1 col-sm-8 col-sm-offset-2  ">
+            <p>{{item.review}}</p>
+        </div>
+        <div class="text-center text2 col-sm-2 col-sm-offset-5  ">
+            <p class="text-uppercase">{{item.author}}</p>
+            <p>{{item.date}}</p>
+        </div>
+        {% endfor %}
+    </div>
+</section>
