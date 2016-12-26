@@ -6892,6 +6892,7 @@ header .vline {
 .menu .title_f {
   font-size: 12px;
   letter-spacing: 5px;
+  text-transform: uppercase;
 }
 .menu .header_title {
   font-size: 140px;
@@ -6924,17 +6925,24 @@ header .vline {
   position: relative;
   width: 195px;
   /* margin-right: 17px; */
-  right: 670px;
-  top: 524px;
   letter-spacing: 5px;
   font-size: 12px;
   line-height: 26px;
+  right: 591px;
+  top: 356px;
 }
 .menu .gline {
   margin-top: 46px;
 }
 .menu .clear {
   clear: both;
+}
+#myCarousel1 .item {
+  margin: 0 auto;
+}
+#myCarousel1 .item img {
+  height: 450px;
+  margin: 0 auto;
 }
 .gallery {
   background-color: #f7f7f7;
