@@ -21,7 +21,13 @@
     });
 
     //   ============================        jquery slider            =============================
+    // $('#myCarousel .item:first').addClass('active');
+    // $('#myCarousel1 .item:first').addClass('active');
 
+    $(document).ready(function () {
+        $('#myCarousel').find('.item').first().addClass('active');
+        $('#myCarousel1').find('.item').first().addClass('active');
+    });
     $('.carousel').on('slid.bs.carousel', function () {
 
         var carouselData = $(this).data('bs.carousel');
@@ -35,6 +41,9 @@
 
         $('#carousel-index').text(text);
         $('#carousel-index1').text(text);
+
+
+
 
     });
     //   ============================        jquery slider            =============================

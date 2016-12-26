@@ -7049,6 +7049,33 @@ footer .footer_right p {
   .menu .header_title {
     font-size: 19vw;
   }
+  #mainNav {
+    position: absolute;
+    top: 0;
+    min-height: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  #mainNav .container {
+    margin-top: 0;
+  }
+  #mainNav .fa {
+    margin: 0;
+  }
+  #mainNav .navbar-toggle {
+    border: none!important;
+    margin: 0;
+    padding: 0;
+  }
+  #mainNav .navbar-toggle:hover {
+    background-color: inherit;
+  }
+  #mainNav .navbar-brand {
+    float: none;
+  }
+  #mainNav .custom_name_nav {
+    text-align: center;
+  }
   .footer_left,
   .footer_right {
     padding-bottom: 50px!important;
@@ -7066,6 +7093,109 @@ footer .footer_right p {
 @media (max-width: 421px) {
   .menu .header_title {
     font-size: 17vw;
+  }
+  header {
+    min-height: auto;
+  }
+  header .text1 {
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 4px;
+  }
+  header .sm_title {
+    margin-top: 30px;
+  }
+  header .header_title {
+    margin-bottom: 25px;
+  }
+  header .header_text_1 {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 5px;
+  }
+  header .sm_header_button {
+    margin-top: 0;
+  }
+  header .header_button {
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 4px;
+    width: 70%;
+    margin-top: 0;
+  }
+  header .vline {
+    height: 10px;
+    min-height: auto;
+  }
+  .download .vline {
+    min-height: auto;
+    height: 40px;
+    bottom: 0;
+  }
+  .download .pete_text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 5px;
+    margin-bottom: 30px;
+  }
+  .download .pete_text1 {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 22px;
+    margin-top: 30px;
+    margin-bottom: 90px;
+  }
+  .menu .text_up {
+    margin-top: 20px!important;
+    margin-bottom: 20px;
+  }
+  .menu .text1 {
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 4px;
+  }
+  .menu .header_title {
+    font-size: 37px;
+    font-weight: 400;
+    line-height: 38px;
+    letter-spacing: 4px;
+    margin-bottom: 40px;
+  }
+  .menu .text1 {
+    margin-top: 60px;
+    margin-bottom: 30px;
+  }
+  .menu .vline {
+    height: 40px;
+    min-height: auto;
+  }
+  .gallery {
+    min-height: auto;
+  }
+  .gallery .vline {
+    border-right: solid 1px #d8d8d8;
+    height: 40px;
+  }
+  .gallery .text1 {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 4px;
+    margin-top: 20px;
+  }
+  .gallery img {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .reviews {
+    min-height: auto;
+  }
+  .reviews .vline {
+    height: 40px;
   }
 }
 
