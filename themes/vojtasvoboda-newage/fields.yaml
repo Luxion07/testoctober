@@ -28,94 +28,48 @@ tabs:
             type: switch
             default: true
 
-        intro_enabled:
-            tab: Intro
+        general_text_enabled:
+            tab: General Text
             label: Enabled
             type: switch
             default: true
-        intro_headline:
-            tab: Intro
+        general_text_headline:
+            tab: General Text
             label: Headline
-            type: text
-            default: "New Age is an app landing page that will help you beautifully showcase your new mobile app, or anything else!"
-        intro_button:
-            tab: Intro
-            label: Button
-            type: text
-            default: Start Now for Free!
-            span: left
-        intro_button_link:
-            tab: Intro
-            label: Button link
-            type: text
-            default: "#download"
-            span: right
-            comment: Leave empty for hiding button
-        intro_img:
-            tab: Intro
-            label: Image
-            comment: Please aspect ratio 0,5625 (e.g. 621 x 1104)
-            type: fileupload
-            mode: image
-            imageWidth: 310
-            imageHeight: 552
-
-        download_enabled:
-            tab: Download
-            label: Enabled
-            type: switch
-            default: true
-        download_headline:
-            tab: Download
-            label: Headline
-            type: text
-            default: Discover what all the buzz is about!
-        download_content:
-            tab: Download
+            type: richeditor
+            default: "PETE AND FRANCES ENSURE THAT STORM’S MENU CHANGES  DAILY, ACCORDING TO  THE FRESH FISH AND PRODUCE AVAILABLE LOCALLY."
+        general_text_content:
+            tab: General Text
             label: Content
             type: richeditor
-            default: "<p>Our app is available on any mobile device! Download now to get started!</p>"
-        download_google_link:
-            tab: Download
-            label: Google Play link
-            type: text
-            span: left
-            default: https://play.google.com
-            comment: Leave empty for hide icon
-        download_appstore_link:
-            tab: Download
-            label: App Store link
-            type: text
-            span: right
-            default: https://appstore.com
-            comment: Leave empty for hide icon
+            default: "Our aim is to use the best of the season’s local produce to steer the menu and wherever possible get people to try fish that they would not normally choose. We use fish that is abundant and sustainable and try to use as much organic and if possible market-garden grown vegetables as we can."
 
-        menu_enabled:
-            tab: Menu
-            label: Enabled
-            type: switch
-            default: true
-        menu_headline:
-            tab: Menu
-            label: Headline
-            type: text
-            default: "Unlimited Menu, Unlimited Fun"
-        menu_subheadline:
-            tab: Menu
-            label: Subheadline
-            type: text
-            default: "Check out what you can do with this app theme!"
-        menu_img:
-            tab: Menu
-            label: Image
-            comment: Please aspect ratio 0,5625 (e.g. 621 x 1104)
-            type: fileupload
-            mode: image
-            imageWidth: 310
-            imageHeight: 552
-        menu_list:
-            tab: Menu List
-            label: Menu
+#        menu_enabled:
+#            tab: Menu
+#            label: Enabled
+#            type: switch
+#            default: true
+#        menu_headline:
+#            tab: Menu
+#            label: Headline
+#            type: text
+#            default: "Unlimited Menu, Unlimited Fun"
+#        menu_subheadline:
+#            tab: Menu
+#            label: Subheadline
+#            type: text
+#            default: "Check out what you can do with this app theme!"
+#        menu_img:
+#            tab: Menu
+#            label: Image
+#            comment: Please aspect ratio 0,5625 (e.g. 621 x 1104)
+#            type: fileupload
+#            mode: image
+#            imageWidth: 310
+#            imageHeight: 552
+        starters_list:
+            tab: Starters
+            label: Starters
             type: repeater
             form:
                 fields:
@@ -123,125 +77,153 @@ tabs:
                         label: Name
                         type: text
                         span: left
-                        comment: Feature name
-                    icon:
-                        label: Icon
+                        comment: Name
+                    price:
+                        label: Price
                         type: text
                         span: right
-                        comment: See http://fontawesome.io/icons/
+                        comment: Just set number
                     text:
                         label: Text
                         type: text
                         span: full
 
-        gallery_enabled:
-            tab: Gallery
-            label: Enabled
-            type: switch
-            default: true
-        gallery_headline:
-            tab: Gallery
-            label: Headline
-            type: text
-            default: "Stop waiting.<br>Start building."
-        gallery_button:
-            tab: Gallery
-            label: Button
-            type: text
-            span: left
-            default: "Let's Get Started!"
-        gallery_button_link:
-            tab: Gallery
-            label: Button link
-            type: text
-            span: right
-            default: "#contact"
-            comment: Leave empty for hiding button
+        mains_list:
+          tab: Mains
+          label: Mains
+          type: repeater
+          form:
+              fields:
+                  name:
+                      label: Name
+                      type: text
+                      span: left
+                      comment: Name
+                  price:
+                      label: Price
+                      type: text
+                      span: right
+                      comment: Just set number
+                  text:
+                      label: Text
+                      type: text
+                      span: full
 
-        reviews_enabled:
-            tab: Reviews
-            label: Enabled
-            type: switch
-            default: true
-        reviews_headline:
-            tab: Reviews
-            label: Headline
-            type: text
-            default: 'We <i class="fa fa-heart"></i> new friends!'
-        reviews_twitter:
-            tab: Reviews
-            label: Twitter link
-            type: text
-            span: left
-            default: https://twitter.com
-            comment: Leave empty for hide icon
-        reviews_facebook:
-            tab: Reviews
-            label: Facebook link
-            type: text
-            span: right
-            default: https://facebook.com
-            comment: Leave empty for hide icon
-        reviews_google:
-            tab: Reviews
-            label: Google Plus link
-            type: text
-            span: left
-            default: https://plus.google.com
-            comment: Leave empty for hide icon
-        reviews_content:
-            tab: Reviews
-            label: Content
-            type: richeditor
-            default:
+        deserts_list:
+          tab: Deserts
+          label: Deserts
+          type: repeater
+          form:
+              fields:
+                  name:
+                      label: Name
+                      type: text
+                      span: left
+                      comment: Name
+                  price:
+                      label: Price
+                      type: text
+                      span: right
+                      comment: Just set number
+                  text:
+                      label: Text
+                      type: text
+                      span: full
 
-        instagram_enabled:
-            tab: Instagram
-            label: Enabled
-            type: switch
-            default: true
-        instagram_headline:
-            tab: Instagram
-            label: Headline
-            type: text
-            default: 'We <i class="fa fa-heart"></i> new friends!'
-        instagram_twitter:
-            tab: Instagram
-            label: Twitter link
+        catch_of_day_name:
+            tab: Catch of day
+            label: Name
             type: text
             span: left
-            default: https://twitter.com
-            comment: Leave empty for hide icon
-        instagram_facebook:
-            tab: Instagram
-            label: Facebook link
+            default: 'Name'
+            cpmment: Specify name
+        catch_of_day_price:
+            tab: Catch of day
+            label: Price
             type: text
             span: right
-            default: https://facebook.com
-            comment: Leave empty for hide icon
-        instagram_google:
-            tab: Instagram
-            label: Google Plus link
+            default: 5
+            comment: Just specify number
+        catch_of_day_description:
+            tab: Catch of day
+            label: Description
             type: text
-            span: left
-            default: https://plus.google.com
-            comment: Leave empty for hide icon
-        instagram_content:
-            tab: Instagram
-            label: Content
-            type: richeditor
-            default:
+            default: "Description"
+            comment: Specify description
+
+        reviews_list:
+          tab: Reviews
+          label: Reviews
+          type: repeater
+          form:
+              fields:
+                  review:
+                      label: Review
+                      type: text
+                      span: full
+                      comment: Review text
+                  author:
+                      label: Author
+                      type: text
+                      span: full
+                      comment: Just set number
+                  date:
+                      label: Date
+                      type: text
+                      span: full
+
+        contacts_time:
+          tab: Work Time
+          label: Work Time
+          type: repeater
+          form:
+            fields:
+                day:
+                  label: Day
+                  type: text
+                  span: left
+                  comment: Day of week or mon-fri
+                from:
+                  label: From
+                  type: text
+                  span: left
+                  comment: start time or Closed
+                to:
+                  label: To
+                  type: text
+                  span: left
+                  comment: end time (if Closed, leave this field empty)
+
+        contacts_phone:
+            tab: Our contacts
+            label: phone
+            type: text
+            default: "01234 567890"
+        contacts_email:
+            tab: Our contacts
+            label: Email
+            type: text
+            default: "info@storm.co.uk"
+        contacts_address:
+            tab: Our contacts
+            label: Address
+            type: text
+            default: "16 High Street, Poole, Dorset, BH15 1BP  "
+        contacts_footer_text:
+            tab: Our contacts
+            label: Custom Text
+            type: text
+            default: "THAT UNBRIDLED MUMBLED UP LANTERN ABSENTLY WHEN FLUENT HONEY DALMATIAN DEAR DREAMED LESS WALRUS THE MUCH GOODNESS ERRATIC JEEZ YIKES CONDESCENDING."
+
+        gallery_files:
+          tab: Gallery
+          label: Gallery
+          type: Patroklo\FormWidgets\FileUpload
+          mode: image-multi-big
 
 
         booking_enabled:
-                    tab: Booking
-                    label: Enabled
-                    type: switch
-                    default: true
-
-
-
-
-
-
-
+          tab: Booking
+          label: Enabled
+          type: switch
+          default: true
