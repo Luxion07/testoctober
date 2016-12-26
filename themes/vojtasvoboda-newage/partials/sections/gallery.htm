@@ -13,15 +13,15 @@
 
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner" role="listbox">
-                    <div class="item active">
-                        <div class="col-sm-8 col-sm-offset-2">
-                            <img  class="img-responsive" src="themes/vojtasvoboda-newage/assets/images/insta.png" alt="insta">
-                        </div>
-                    </div>
+                    <!--<div class="item active">-->
+                        <!--<div class="col-sm-8 col-sm-offset-2">-->
+                            <!--<img  class="img-responsive" src="themes/vojtasvoboda-newage/assets/images/insta.png" alt="insta">-->
+                        <!--</div>-->
+                    <!--</div>-->
                     {% for image in this.theme.gallery_files %}
                     <div class="item">
                         <div class="col-sm-8 col-sm-offset-2">
-                            <img  class="img-responsive" src="themes/vojtasvoboda-newage/assets/images/insta.png" alt="insta">
+                            <img  class="img-responsive" src="{{image.path}}" alt="insta">
                         </div>
                     </div>
                     {% endfor %}
