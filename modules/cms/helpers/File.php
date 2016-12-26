@@ -1,5 +1,5 @@
 <?php namespace Cms\Helpers;
-use System\Models\File as SysFile;
+
 /**
  * Defines some file-system helpers for the CMS system.
  *

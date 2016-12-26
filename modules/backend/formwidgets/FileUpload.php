@@ -415,7 +415,7 @@ class FileUpload extends FormWidgetBase
      * Adds the bespoke attributes used internally by this widget.
      * - thumbUrl
      * - pathUrl
-     * @return \System\Models\File
+     * @return System\Models\File
      */
     protected function decorateFileAttributes($file)
     {
