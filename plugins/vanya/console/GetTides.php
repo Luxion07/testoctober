@@ -6,7 +6,7 @@
  * Time: 13:18
  */
 
-namespace System\Console;
+namespace Vanya\Console;
 use Illuminate\Console\Command;
 use System\Classes\UpdateManager;
 use Symfony\Component\Console\Input\InputOption;
