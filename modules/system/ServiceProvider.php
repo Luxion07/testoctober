@@ -234,6 +234,9 @@ class ServiceProvider extends ModuleServiceProvider
         $this->registerConsoleCommand('theme.remove', 'System\Console\ThemeRemove');
         $this->registerConsoleCommand('theme.list', 'System\Console\ThemeList');
         $this->registerConsoleCommand('theme.use', 'System\Console\ThemeUse');
+
+        $this->registerConsoleCommand('getTides', 'Vanya\Console\GetTides');
+        $this->registerConsoleCommand('getPgotos', 'Vanya\Console\GetPhotos');
     }
 
     /*

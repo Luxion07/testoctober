@@ -20,7 +20,7 @@
                 <div>STARTERS</div>
                 <img src="themes/vojtasvoboda-newage/assets/images/xx.png" alt="X">
             </div>
-            <div class="text-center f_blocks col-sm-10 col-sm-offset-1">
+            <div class="text-center f_blocks col-sm-10">
                 {% for item in this.theme.starters_list %}
                 <div class="col-sm-5 pad col-sm-offset-1">
                     <p class="text-center">- £{{item.price}} -</p>
@@ -34,7 +34,7 @@
                 <div>MAINS</div>
                 <img src="themes/vojtasvoboda-newage/assets/images/xx.png" alt="X">
             </div>
-            <div class="text-center f_blocks col-sm-10 col-sm-offset-1">
+            <div class="text-center f_blocks col-sm-10">
                 {% for item in this.theme.mains_list %}
                 <div class="col-sm-5 pad col-sm-offset-1">
                     <p class="text-center">- £{{item.price}} -</p>
@@ -44,7 +44,7 @@
                 {% endfor %}
             </div>
 
-            <div class="text-center border col-sm-10 col-sm-offset-1">
+            <div class="text-center border col-sm-10">
                 <div class="col-sm-6 pad col-sm-offset-3">
                     <p class="text-center">- £{{this.theme.catch_of_day_price}} -</p>
                     <p class="text-center title_f">{{this.theme.catch_of_day_name}}</p>

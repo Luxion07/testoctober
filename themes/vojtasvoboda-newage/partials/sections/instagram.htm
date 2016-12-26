@@ -3,25 +3,11 @@
         <div class="row">
             <div class="rotate">FOLLOW US  @INSTAHANDLE</div>
             <div class="col-md-8 col-md-offset-2 insta">
-
+                {% for photo in this.theme.photos %}
                 <div class="col-sm-4  col-xs-6  image_insta">
-                    <img src="themes/vojtasvoboda-newage/assets/images/insta1.png" alt="X">
+                    <img src="{{photo.src}}" alt="X" width="250" height="250">
                 </div>
-                <div class="col-sm-4  col-xs-6 image_insta">
-                    <img src="themes/vojtasvoboda-newage/assets/images/insta2.png" alt="X">
-                </div>
-                <div class="col-sm-4  col-xs-6 image_insta">
-                    <img src="themes/vojtasvoboda-newage/assets/images/insta4.png" alt="X">
-                </div>
-                <div class="col-sm-4  col-xs-6 image_insta">
-                    <img src="themes/vojtasvoboda-newage/assets/images/insta4.png" alt="X">
-                </div>
-                <div class="col-sm-4  col-xs-6 image_insta">
-                    <img src="themes/vojtasvoboda-newage/assets/images/insta1.png" alt="X">
-                </div>
-                <div class="col-sm-4  col-xs-6 image_insta">
-                    <img src="themes/vojtasvoboda-newage/assets/images/insta2.png" alt="X">
-                </div>
+                {% endfor %}
             </div>
         </div>
     </div>

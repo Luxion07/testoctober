@@ -6,31 +6,29 @@
             <div class="col-sm-6 footer_left">
                 <div class="col-sm-8 col-sm-offset-2">
                     <p>OPENING TIMES</p>
+                    {% for item in this.theme.contacts_time %}
                     <div>
-                        <div class=" col-sm-9 col-xs-9">Mon - Fri</div>
-                        <div class=" text-right col-sm-3">18:00 - late</div>
+                        <div class=" col-sm-9 col-xs-9">{{item.day}}</div>
+                        <div class=" text-right col-sm-3">
+                            {% if item.to %}
+                            {{item.from}} - {{item.to}}
+                            {% else %}
+                            Closed
+                            {% endif %}
+                        </div>
                     </div>
-                    <div>
-                        <div class=" col-sm-9 col-xs-9">Sat</div>
-                        <div class=" text-right col-sm-3">17:30 - late</div>
-                    </div>
-                    <div>
-                        <div class=" col-sm-9 col-xs-9">San</div>
-                        <div class=" col-sm-3 text-right">Closed</div>
-                    </div>
-
+                    {% endfor %}
 
                     <p class="contact_footer">CONTACT</p>
-                    <p>01234 658890 </p>
-                    <p>info@storm.co.uk</p>
-                    <p>16 High Street, Poole, Dorset, BH15 1BP </p>
+                    <p>{{this.theme.contacts_phone}}</p>
+                    <p>{{this.theme.contacts_email}}</p>
+                    <p>{{this.theme.contacts_address}} </p>
 
                 </div>
             </div>
             <div class="col-sm-6 footer_right">
                 <div class="col-sm-8 col-sm-offset-2">
-                    <p class="text-uppercase">That unbridled mumbled up lantern absently when fluent honey dalmatian
-                        dear dreamed less walrus the much goodness erratic jeez yikes condescending.</p>
+                    <p class="text-uppercase">{{this.theme.contacts_footer_text}}</p>
                 </div>
             </div>
 
