@@ -1,28 +1,32 @@
-<div class="section" data-anchor="seven-section">
 <footer id="booking">
     <div class="container">
         <div class="row">
-            <div class="rotate hidden-sm hidden-xs">STORM</div>
             <div class="col-sm-6 footer_left">
                 <div class="col-sm-8 col-sm-offset-2">
                     <p>OPENING TIMES</p>
                     {% for item in this.theme.contacts_time %}
                     <div>
-                        <div class=" col-sm-9 col-xs-9">{{item.day}}</div>
-                        <div class=" text-right col-sm-3">
-                            {% if item.to %}
-                            {{item.from}} - {{item.to}}
+                        <div class=" col-sm-9">{{item.day}}</div>
+                        <div class=" text-right col-sm-3">{% if item.to %}
+                          {{item.from}} - {{item.to}}
                             {% else %}
                             Closed
                             {% endif %}
                         </div>
+                         
                     </div>
                     {% endfor %}
 
                     <p class="contact_footer">CONTACT</p>
-                    <p>{{this.theme.contacts_phone}}</p>
-                    <p>{{this.theme.contacts_email}}</p>
-                    <p>{{this.theme.contacts_address}} </p>
+                    <p>
+                        {{this.theme.contacts_phone}}
+                         </p>
+                    <p>
+                        {{this.theme.contacts_email}}
+                    </p>
+                    <p>
+                        {{this.theme.contacts_address}}
+                         </p>
 
                 </div>
             </div>
@@ -35,6 +39,3 @@
         </div>
     </div>
 </footer>
-</div>
-
-
