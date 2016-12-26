@@ -48,11 +48,12 @@ class GetTides extends Command
             $out = json_decode(curl_exec($curl));
             curl_close($curl);
         }
+        var_dump($out);
         if($out){
             $min = $max = $out->heights[0]->height;
             $min_time = $max_time = $out->heights[0]->dt;
             foreach($out->heights as $data) {
-//                if (\Carbon\Carbon::createFromTimestamp($data->dt)->diffInDays() == 0) {
+                if (\Carbon\Carbon::createFromTimestamp($data->dt)->diffInDays() == 0) {
                     if ($max < $data->height) {
                         $max = $data->height;
                         $max_time = $data->dt;
@@ -61,7 +62,7 @@ class GetTides extends Command
                         $min = $data->height;
                         $min_time = $data->dt;
                     }
-//                }
+                }
             }
             $t = Tides::first();
             if(!$t){
@@ -72,6 +73,7 @@ class GetTides extends Command
                     'min_time' => strval($min_time),
                     'updated_at' => \Carbon\Carbon::now()
                 ]);
+
             }else{
                 $min_h =\Carbon\Carbon::createFromTimestamp($min_time)->hour;
                 $min_min = \Carbon\Carbon::createFromTimestamp($min_time)->minute;
