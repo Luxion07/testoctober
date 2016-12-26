@@ -1,0 +1,12 @@
+<section class="gallery" id="gallery">
+    <div class="cta-content">
+        <div class="container">
+            {% for image in this.theme.gallery_files %}
+            <div class="col-sm-8 col-sm-offset-2">
+                <img src="{{image.path}}" alt="insta">
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    <div class="overlay"></div>
+</section>

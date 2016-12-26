@@ -1,0 +1,15 @@
+<section id="instagram" class="instagram bg-primary text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8 col-sm-offset-2 insta">
+                {% for photo in this.theme.photos %}
+                <div class="col-sm-4 image_insta">
+                    <a href="https://www.instagram.com/stormfishpoole/" target="_blank">
+                        <img src="{{photo.src}}" alt="X" width="250" height="250">
+                    </a>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
